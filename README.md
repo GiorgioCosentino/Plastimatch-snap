@@ -2,13 +2,14 @@
 
 [![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/plastimatch)
 
-This is the Plastimatch Snap package that provides an easy and portable way to install it on Linux systems.
+**Plastimatch** is a leading open-source tool for **medical image processing**. This Snap package provides a **portable, reliable, and easy way** to install Plastimatch on Linux systems without worrying about dependencies or compatibility issues.
 
 ## Features
 
-- Simple installation via Snap.
-- Secure and isolated execution.
-- Compatible with most Linux distributions.
+- **Easy installation** via Snap: no manual dependency management required.  
+- **Secure and isolated execution** using Snap confinement.  
+- **Cross-distribution compatibility**: works on Ubuntu, Debian, and most Linux distributions.  
+- **Supports medical imaging workflows**: registration, conversion, visualization, and more.
 
 ## Installation
 
@@ -46,6 +47,12 @@ sudo snap refresh plastimatch
 - [Plastimatch Official Website](https://plastimatch.org/)
 - [Plastimatch on Snapcraft](https://snapcraft.io/plastimatch)
 
+## Contributing and Support
+
+For bug reports, feature requests, or contributions:
+- Open an issue on the Github repository.
+- Pull requests are welcome for improvements or packaging updates.
+
 ## License
 
-See the [LICENSE](LICENSE) file for details.# plastimatch-snap
+See the [LICENSE](LICENSE) file for details.
