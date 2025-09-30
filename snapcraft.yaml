@@ -14,46 +14,7 @@ description: |
 
 grade: stable
 confinement: strict
-
-parts:
-  plastimatch:
-    plugin: dump
-    source: local
-
-    stage-packages:
-      - libfuse3-3
-      - libinsighttoolkit5.3
-      - libpsm2-2-compat
-      - libdcmtk17
-      - gcc
-
-    organize:
-      libs/libplmsegment.so.1.10: lib/
-      libs/libplmregister.so.1.10: lib/
-      libs/libplmreconstruct.so.1.10: lib/
-      libs/libplmdose.so.1.10: lib/
-      libs/libplmutil.so.1.10: lib/
-      libs/libplmbase.so.1.10: lib/
-      libs/libplmsys.so.1.10: lib/
-      libs/libblas.so.3: lib/
-      libs/liblapack.so.3: lib/
-      libs/libdcmdata.so.17: lib/
-      libs/libdcmjpeg.so.17: lib/
-      libs/liboflog.so.17: lib/
-      libs/libofstd.so.17: lib/
-      libs/libdcmimgle.so.17: lib/
-      libs/libijg12.so.17: lib/
-      libs/libijg16.so.17: lib/
-      libs/libijg8.so.17: lib/
-      libs/libminc2.so.5.3.0: lib/
-      libs/libgfortran.so.5: lib/
-      libs/libdlib.so.19.1: lib/
-      libs/libxml2.so.2: lib/
-      libs/libicuuc.so.72: lib/
-      libs/libicudata.so.72: lib/
-      libs/libjpeg.so.62: lib/
-      libs/libhdf5_serial_cpp.so.103: lib/
-
+      
 apps:
   plastimatch:
     command: ./plastimatch
@@ -61,3 +22,14 @@ apps:
       - home
       - removable-media
       - optical-drive
+
+parts:
+  plastimatch:
+    plugin: dump
+    source: local
+
+    stage-packages:
+      - libinsighttoolkit5.3
+      - libdcmtk17
+      - gcc
+
