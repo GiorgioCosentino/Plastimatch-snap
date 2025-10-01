@@ -31,5 +31,6 @@ parts:
     stage-packages:
       - libinsighttoolkit5.3
       - libdcmtk17
+      - libpsm2-2-compat
       - gcc
 
